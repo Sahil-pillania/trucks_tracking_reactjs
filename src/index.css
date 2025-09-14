@@ -1,38 +1,130 @@
+@import "@fontsource/roboto";
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Roboto, Arial, sans-serif" !important;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-color: linear-gradient(190deg, #17cdbb, #12d0bd, #09d5c1);
+  --secondary-color: linear-gradient(190deg, #c4fdf7, #ccf8f3, #96fcf2);
+  --img-opacity: 1;
+  --bg-color: #ffffff;
+  --bg-gray-color: #51a9c0;
+  --text-color: #000000;
+  --button-color: rgb(255, 255, 255);
+  --img-overlay: transparent;
+  --toggle-color: rgb(62, 62, 62);
+  --form-bg-color: linear-gradient(190deg, #fffd94, #fddd8b, #ffb702);
+  --card-bg-color: #ffffff;
+  --transition-property: background-color, color, border-color, transform;
+  --transition-time: 1s;
+  --border-radius: 2px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* for dark theme  */
+[data-theme="dark"] {
+  --primary-color: linear-gradient(190deg, #0eae9e, #12d0bd, #06c1ae);
+  --secondary-color: linear-gradient(190deg, #98d8d2, #ccf8f3, #82b2ad);
+  --img-opacity: 0.8;
+  --bg-color: #121212;
+  --bg-gray-color: #5c5c5c;
+  --text-color: #ffffff;
+  --button-color: rgb(108, 221, 255);
+  --img-overlay: rgba(0, 0, 0, 0.3);
+  --toggle-color: rgb(255, 255, 255);
+  --form-bg-color: linear-gradient(190deg, #c1c090, #d2a531, #ffb702);
+  --card-bg-color: #5c5c5c;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Theme toggler  */
+.toggle_button {
+  background: var(--toggle-color);
+  border-radius: 10px;
+  transform: scale(0.9);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /* border: 1px solid gray; */
+  transition: var(--transition-property), var(--transition-time);
+}
+
+/* main fonts  */
+.roboto_font {
+  font-family: "Roboto" !important;
+}
+
+/* Navbar brand logo  */
+.brand_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-right: 10px;
+}
+.brand_logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.submit_button {
+  animation: popEffect 0.6s ease-in-out;
+  background-color: var(--button-color);
+}
+
+.about-card:hover,
+.inner_wrapper:hover,
+.contact-form:hover {
+  animation: popEffect 0.6s ease-in-out;
+}
+
+.services_card:hover,
+.services_card:focus {
+  transform: scale(1.01);
+  transition: transform 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.popping:hover {
+  animation: popEffect 0.6s ease-in-out;
+  /* optional smoothing */
+  transition: transform 0.3s;
+}
+.popping2:hover {
+  animation: popEffect2 0.6s ease-in-out;
+  /* optional smoothing */
+  transition: transform 0.3s;
+}
+
+/* keyframes for animation  */
+@keyframes popEffect {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.005); /* scale up */
+  }
+  60% {
+    transform: scale(0.995); /* scale down slightly */
+  }
+  100% {
+    transform: scale(1); /* back to normal */
+  }
+}
+@keyframes popEffect2 {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.05); /* scale up */
+  }
+  60% {
+    transform: scale(0.95); /* scale down slightly */
+  }
+  100% {
+    transform: scale(1); /* back to normal */
+  }
 }
 
 button {
@@ -42,27 +134,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /* background-color: #2ffd36; */
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  /* background-color: #11ce18; */
+  border-color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
