@@ -10,19 +10,24 @@ const Intro = () => {
               <div>
                 <h2 className="welcome_heading">Welcome to Trucks Tracking</h2>
               </div>
-              <h3>Lorem ipsum dolor sit.</h3>
+              <h4>
+                your reliable partner in managing and monitoring truck movements
+              </h4>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae.adipisicing elit. Recusandae.
+                Stay informed with real-time updates, route insights, and
+                vehicle statuses. Our system ensures smooth coordination between
+                drivers, dispatchers, and managers at all times.
               </p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae. adipisicing elit. Recusandae.
+                Whether you're managing a small fleet or a large operation,
+                Trucks Tracking gives you the tools to increase efficiency,
+                reduce delays, and improve customer satisfaction.
               </p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae. Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Recusandae.<a href=""> Link</a>
+                With a user-friendly interface and powerful tracking features,
+                our platform makes it simple to oversee operations, optimize
+                routes, and reduce fuel costs. You can access all key
+                information at a glance.<a> Learn More</a>
               </p>
             </div>
             <div className="imageContainer">
