@@ -13,6 +13,7 @@
   --bg-color: #ffffff;
   --bg-gray-color: #51a9c0;
   --text-color: #000000;
+  --inverted-text-color: #ffffff;
   --button-color: rgb(255, 255, 255);
   --img-overlay: transparent;
   --toggle-color: rgb(62, 62, 62);
@@ -31,6 +32,7 @@
   --bg-color: #121212;
   --bg-gray-color: #5c5c5c;
   --text-color: #ffffff;
+  --inverted-text-color: #000000;
   --button-color: rgb(108, 221, 255);
   --img-overlay: rgba(0, 0, 0, 0.3);
   --toggle-color: rgb(255, 255, 255);
@@ -63,8 +65,10 @@
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   margin-right: 10px;
 }
-.brand_logo:hover {
+.brand_logo:hover,
+.brand_text:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.04);
 }
 
 .submit_button {
