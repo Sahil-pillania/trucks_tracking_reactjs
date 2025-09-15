@@ -87,6 +87,7 @@ export default function ColorInversionFooter() {
         }}
       >
         <Card
+          className="roboto_font"
           variant="soft"
           size="sm"
           sx={{
@@ -100,37 +101,51 @@ export default function ColorInversionFooter() {
             minHeight={80}
             sx={{ flexBasis: { xs: 200, md: "initial" } }}
           >
-            <img
-              alt=""
-              src="/static/blog/mui-product-comparison/ecosystem.png"
-            />
+            <img alt="" src="src/assets/Images/footer_branding.jpg" />
           </AspectRatio>
           <CardContent>
-            <Typography level="body-sm">Intro to the MUI ecosystem</Typography>
-            <Typography level="body-xs">Blog post</Typography>
+            <Typography level="body-sm">Truck Tracking</Typography>
+            <Typography level="body-xs">
+              &copy; 2025 Trucks Tracking. All rights reserved.
+            </Typography>
           </CardContent>
         </Card>
+
         <List
+          className="roboto_font"
           size="sm"
           orientation="horizontal"
           wrap
           sx={{ flexGrow: 0, "--ListItem-radius": "8px" }}
         >
           <ListItem nested sx={{ width: { xs: "50%", md: 140 } }}>
-            <ListSubheader sx={{ fontWeight: "xl" }}>Sitemap</ListSubheader>
+            <ListSubheader sx={{ fontWeight: "xl" }}>Pages</ListSubheader>
             <List>
               <ListItem>
-                <ListItemButton>Services</ListItemButton>
+                <ListItemButton>
+                  <a className="footer_links" href="/services">
+                    Services
+                  </a>
+                </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>Blog</ListItemButton>
+                <ListItemButton>
+                  <a className="footer_links" href="/about">
+                    About Us
+                  </a>
+                </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>About</ListItemButton>
+                <ListItemButton>
+                  {" "}
+                  <a className="footer_links" href="/contact">
+                    Contact Us
+                  </a>
+                </ListItemButton>
               </ListItem>
             </List>
           </ListItem>
-          <ListItem nested sx={{ width: { xs: "50%", md: 180 } }}>
+          {/* <ListItem nested sx={{ width: { xs: "50%", md: 180 } }}>
             <ListSubheader sx={{ fontWeight: "xl" }}>Products</ListSubheader>
             <List>
               <ListItem>
@@ -143,7 +158,7 @@ export default function ColorInversionFooter() {
                 <ListItemButton>Material UI</ListItemButton>
               </ListItem>
             </List>
-          </ListItem>
+          </ListItem> */}
         </List>
       </Box>
     </Sheet>
