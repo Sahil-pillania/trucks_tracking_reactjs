@@ -335,6 +335,11 @@ main {
   color: var(--text-color);
 }
 
+.navLinks {
+  color: #000;
+  text-decoration: none;
+}
+
 .footer_links {
   text-decoration: none;
   color: #fff;

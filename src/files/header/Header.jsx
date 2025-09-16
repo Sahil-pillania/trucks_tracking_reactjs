@@ -24,14 +24,20 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/services">
-              Services
+            <Nav.Link>
+              <Link className="navLinks" to="/services">
+                Services
+              </Link>
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact">
-              Contact Us
+            <Nav.Link>
+              <Link className="navLinks" to="/contact">
+                Contact Us
+              </Link>
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">
-              About Us
+            <Nav.Link>
+              <Link className="navLinks" to="/about">
+                About Us
+              </Link>
             </Nav.Link>
             {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
