@@ -55,7 +55,10 @@ const Services = () => {
               {servicesData.map((card) => (
                 <Col key={card.id} md={4} className="mb-4">
                   <Card className="services_card" style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={card.img} />
+                    <Card.Img
+                      variant="top"
+                      src={`${import.meta.env.BASE_URL}images/${card.img}`}
+                    />
                     <Card.Body>
                       <Card.Title>{card.title}</Card.Title>
                       <Card.Text>{card.text}</Card.Text>

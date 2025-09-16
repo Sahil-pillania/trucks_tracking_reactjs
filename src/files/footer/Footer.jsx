@@ -18,6 +18,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import SendIcon from "@mui/icons-material/Send";
 import ColorLensRoundedIcon from "@mui/icons-material/ColorLensRounded";
 
+import footerBanner from "../../assets/Images/footer_branding.jpg";
+
 export default function ColorInversionFooter() {
   const [color, setColor] = React.useState("neutral");
   return (
@@ -101,7 +103,7 @@ export default function ColorInversionFooter() {
             minHeight={80}
             sx={{ flexBasis: { xs: 200, md: "initial" } }}
           >
-            <img alt="" src="src/assets/Images/footer_branding.jpg" />
+            <img alt="" src={footerBanner} />
           </AspectRatio>
           <CardContent>
             <Typography level="body-sm">Truck Tracking</Typography>

@@ -1,4 +1,5 @@
 import React from "react";
+import portrait from "../../../assets/Images/portrait.jpg";
 
 const Intro = () => {
   return (
@@ -31,11 +32,7 @@ const Intro = () => {
               </p>
             </div>
             <div className="imageContainer">
-              <img
-                src="src/assets/Images/portrait.jpg"
-                className="popping"
-                alt="truckers"
-              />
+              <img src={portrait} className="popping" alt="truckers" />
             </div>
           </div>
         </div>

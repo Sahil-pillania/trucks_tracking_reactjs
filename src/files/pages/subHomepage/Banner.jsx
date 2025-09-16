@@ -1,13 +1,11 @@
 import React from "react";
+import bannerImg from "../../../assets/Images/banner.jpg";
 
 const Banner = () => {
   return (
     <div>
       <div className="bannerBox">
-        <img
-          src={`${import.meta.env.BASE_URL}src/assets/Images/banner.jpg`}
-          alt="Banner Image"
-        />
+        <img src={bannerImg} alt="Banner Image" />
       </div>
     </div>
   );
