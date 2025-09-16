@@ -57,7 +57,7 @@ const Services = () => {
                   <Card className="services_card" style={{ width: "100%" }}>
                     <Card.Img
                       variant="top"
-                      src={`${import.meta.env.BASE_URL}images/${card.img}`}
+                      src={`${import.meta.env.BASE_URL}${card.img}`}
                     />
                     <Card.Body>
                       <Card.Title>{card.title}</Card.Title>

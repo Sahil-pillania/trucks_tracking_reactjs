@@ -6,6 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import DarkModeToggle from "../../Utilites/DarkMode";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -23,9 +24,15 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/services">Services</Nav.Link>
-            <Nav.Link href="/contact">Contact Us</Nav.Link>
-            <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link as={Link} href="/services">
+              Services
+            </Nav.Link>
+            <Nav.Link as={Link} href="/contact">
+              Contact Us
+            </Nav.Link>
+            <Nav.Link as={Link} href="/about">
+              About Us
+            </Nav.Link>
             {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

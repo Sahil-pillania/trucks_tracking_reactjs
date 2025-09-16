@@ -19,6 +19,7 @@ import SendIcon from "@mui/icons-material/Send";
 import ColorLensRoundedIcon from "@mui/icons-material/ColorLensRounded";
 
 import footerBanner from "../../assets/Images/footer_branding.jpg";
+import { Link } from "react-router-dom";
 
 export default function ColorInversionFooter() {
   const [color, setColor] = React.useState("neutral");
@@ -125,24 +126,23 @@ export default function ColorInversionFooter() {
             <List>
               <ListItem>
                 <ListItemButton>
-                  <a className="footer_links" href="/services">
+                  <Link className="footer_links" to="/services">
                     Services
-                  </a>
+                  </Link>
                 </ListItemButton>
               </ListItem>
               <ListItem>
                 <ListItemButton>
-                  <a className="footer_links" href="/about">
+                  <Link className="footer_links" to="/about">
                     About Us
-                  </a>
+                  </Link>
                 </ListItemButton>
               </ListItem>
               <ListItem>
                 <ListItemButton>
-                  {" "}
-                  <a className="footer_links" href="/contact">
+                  <Link className="footer_links" to="/contact">
                     Contact Us
-                  </a>
+                  </Link>
                 </ListItemButton>
               </ListItem>
             </List>
