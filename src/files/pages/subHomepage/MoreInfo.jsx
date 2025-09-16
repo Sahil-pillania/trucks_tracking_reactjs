@@ -7,12 +7,13 @@ const MoreInfo = () => {
         <div className="innerWrapper contentBox">
           <h2>More Information</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
-            velit vel eleifend scelerisque, lectus ligula vulputate mauris, id
-            pharetra nunc lacus ac neque. Sed vel dui et nunc lobortis
-            dignissim. Nulla facilisi.
+            For more information about our services, features, or support
+            options, feel free to contact us anytime. We're here to help you
+            every step of the way.
           </p>
-          <button variant="outline-warning">Read More</button>
+          <a href="/services">
+            <button variant="outline-warning">Read More</button>
+          </a>
         </div>
       </div>
     </>
