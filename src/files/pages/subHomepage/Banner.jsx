@@ -4,7 +4,10 @@ const Banner = () => {
   return (
     <div>
       <div className="bannerBox">
-        <img src="src/assets/Images/banner.jpg" alt="Banner Image" />
+        <img
+          src={`${import.meta.env.BASE_URL}src/assets/Images/banner.jpg`}
+          alt="Banner Image"
+        />
       </div>
     </div>
   );
