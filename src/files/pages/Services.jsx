@@ -8,37 +8,37 @@ const Services = () => {
       id: 1,
       title: "Real-Time GPS Tracking",
       text: "Track your fleet live on the map with accurate, real-time GPS updates for better visibility and control over your truck movements.",
-      img: "/services.jpg",
+      img: "services.jpg",
     },
     {
       id: 2,
       title: "Route Optimization",
       text: "Automatically suggest the most efficient routes to reduce fuel costs, minimize delays, and improve delivery times.",
-      img: "/services.jpg",
+      img: "services.jpg",
     },
     {
       id: 3,
       title: "Driver Monitoring",
       text: "Monitor driver behavior, including speed, idle time, and route deviations to ensure safety and performance standards are met.",
-      img: "/services.jpg",
+      img: "services.jpg",
     },
     {
       id: 4,
       title: "Delivery Status Updates",
       text: "Receive instant updates on pickup, in-transit, and delivered statuses to keep your customers and team informed at all times.",
-      img: "/services.jpg",
+      img: "services.jpg",
     },
     {
       id: 5,
       title: "Maintenance Alerts",
       text: "Get timely alerts for vehicle maintenance to avoid unexpected breakdowns and keep your fleet running smoothly.",
-      img: "/services.jpg",
+      img: "services.jpg",
     },
     {
       id: 6,
       title: "Analytics & Reporting",
       text: "Gain insights into fleet performance, fuel usage, and delivery trends with easy-to-understand reports and dashboards.",
-      img: "/services.jpg",
+      img: "services.jpg",
     },
   ];
 
