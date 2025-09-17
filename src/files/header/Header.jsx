@@ -13,12 +13,14 @@ function Header() {
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary py-0">
       <Container>
         <Navbar.Brand href="/">
-          <img
-            src="favicon.jpg"
-            className="popping2 brand_logo"
-            alt="Brand_logo"
-          />
-          <span className="brand_text">Truck-Tracking</span>
+          <Link className="navLinks" to="/">
+            <img
+              src="favicon.jpg"
+              className="popping2 brand_logo"
+              alt="Brand_logo"
+            />
+            <span className="brand_text">Truck-Tracking</span>
+          </Link>
           {/* Truck-Tracking */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
