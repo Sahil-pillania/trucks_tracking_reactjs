@@ -18,9 +18,6 @@ function DarkModeToggle() {
   };
 
   return (
-    // <button onClick={toggleTheme} className="toggle_button">
-    //   {theme === "light" ? "🌙 Dark" : "☀️ Light"}
-    // </button>
     <Button
       onClick={toggleTheme}
       variant="contained"
