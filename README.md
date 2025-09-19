@@ -1,7 +1,7 @@
-                                                            # Trucks tracking Application
+                                 # Trucks tracking Application
 ## Developed Using React JS with Vite.
 ----------------
-                                                                     # Tech Used:
+                                        # Tech Used:
 ## :- React JS
 ## :- Material UI
 ## :- Bootstrap for React
