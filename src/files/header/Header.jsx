@@ -53,11 +53,9 @@ function Header() {
               </NavDropdown.Item>
             </NavDropdown> */}
           </Nav>
-          <Nav>
-            <Nav>
-              <DarkModeToggle />
-            </Nav>
-          </Nav>
+          <div as="button">
+            <DarkModeToggle />
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
