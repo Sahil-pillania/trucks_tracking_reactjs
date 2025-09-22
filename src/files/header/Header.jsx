@@ -38,12 +38,10 @@ function Header() {
               </NavDropdown.Item>
             </NavDropdown> */}
           </Nav>
-          <Nav>
-            <Nav.Link eventKey={2} href="#memes"></Nav.Link>
-            <Nav.Link href="#deets">
-              <DarkModeToggle />
-            </Nav.Link>
-          </Nav>
+
+          <div as="button">
+            <DarkModeToggle />
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
