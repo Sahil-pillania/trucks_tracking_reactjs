@@ -388,6 +388,8 @@ main {
 
   .contact-form button {
     margin: 20px auto 0;
+    color: #000;
+    background-color: #11ce18;
   }
 }
 /* Responsive */
